@@ -2,12 +2,11 @@ pipeline {
     agent any
     environment {
         HOME                = "."
-        AWS_CF              = credentials("aws-cf")
         AWS_CF_DISTRIBUTION = credentials("aws-cf-distribution")
         AWS_S3              = credentials("aws-s3")
         AWS_S3_BUCKET       = credentials("aws-s3-bucket")
-        AWS_CFG_REGION      = credentials("aws-cfg-region") // us-east-1
-        USER_HOME           = credentials("ec2-user-home") // /home/ec2-user
+        AWS_CFG_REGION      = credentials("aws-cfg-region")
+        USER_HOME           = credentials("ec2-user-home")
     }
     stages {
         stage("Install") {
