@@ -39,7 +39,7 @@ pipeline {
                 sh "aws configure set profile jenkins"
                 sh "aws configure set aws_access_key_id $AWS_S3_USR --profile jenkins"
                 sh "aws configure set aws_secret_access_key $AWS_S3_PSW --profile jenkins"
-                sh "aws configure set region $AWS_REGION --profile jenkins"
+                sh "aws configure set region $AWS_CFG_REGION --profile jenkins"
                 sh "aws configure set output json --profile jenkins"
                 sh 'aws s3 sync $WORKSPACE/ s3://$AWS_S3_BUCKET/ --include="*.html" --include="*.css" --acl=public-read --profile jenkins'
                 sh 'aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --path "/*.*" --profile jenkins'
