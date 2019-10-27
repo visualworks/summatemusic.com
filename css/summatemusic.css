@@ -9,3 +9,11 @@ body {
 a, .has-text-info, .has-text-link, .has-text-success {
     color: #ff5c39;
 }
+
+/*
+ * Custom properties
+ */
+h1.title img {
+    width: 100%;
+    max-width: 600px;
+}
