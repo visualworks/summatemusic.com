@@ -1,20 +1,24 @@
 window.addEventListener("load", (event) => {
-    const currentTime = new Date();
-    let streamTime = new Date("November 02, 2019 16:00:00 GMT-03:00");
-    const endTime = new Date("November 02, 2019 21:00:00 GMT-03:00");
+    const currentDate = new Date();
+    const currentTime = currentDate.getTime();
+    let streamStart = new Date("November 02, 2019 20:00:00 GMT+02:00");
+    let startTime = streamStart.getTime();
+    const streamEnd = new Date("November 03, 2019 01:00:00 GMT+02:00");
+    const endTime = streamEnd.getTime();
     const domElement = document.getElementById("streaming-time-to-start");
     const videoPlayerElement = document.getElementById("live-streaming-video-player");
     videoPlayerElement.width = screen.width;
     videoPlayerElement.height = screen.height;
-    if (currentTime >= streamTime && currentTime <= endTime) {
+    if (currentTime >= startTime && currentTime <= endTime) {
         videoPlayerElement.className = "";
     } else {
         videoPlayerElement.className = "is-hidden";
-        if (currentTime <= endTime) {
-            streamTime = new Date(streamTime + 1);
+        if (currentTime >= endTime) {
+            streamStart = new Date(streamStart + 1);
+            startTime = streamStart.getTime();
         }
         setInterval(() => {
-            const timeToStart = new Date(streamTime - currentTime);
+            const timeToStart = new Date(startTime - currentTime);
             domElement.innerText = `${timeToStart.getHours()} horas ${timeToStart.getMinutes()} minutos ${timeToStart.getSeconds()} segundos`;
         }, 1000);
     }
