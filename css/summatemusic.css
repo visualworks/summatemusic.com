@@ -32,6 +32,13 @@ div.hero-body img {
     max-width: 90%;
 }
 
+iframe#live-streaming-video-player {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
 footer.hero-foot {
     background-color: #000;
     color: #fff;
