@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Summate Music - Arte & Cultura</title>
+    <title>Summate Music - Arte & Cultura - Amplificando Experiências</title>
     <link rel="shortcut icon" href="img/favicon-orange@4x.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.css">
@@ -10,34 +10,289 @@
 </head>
 <body>
 <section class="hero is-fullheight">
-    <div class="hero-body">
+    <div class="hero-head">
+        <header class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <img src="img/logo-summate-music-white@4x.png" title="Summate Music - Arte & Cultura"
+                             alt="Summate Music - Arte & Cultura"/>
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+                </div>
+                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+                        <span class="navbar-item has-text-white">
+                            Arte & Cultura
+                        </span>
+                        <span class="navbar-item">
+                            <a href="https://www.instagram.com/summate.music/" title="Instagram - @summate.music"
+                               class="has-text-white">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                                Instagram
+                            </a>
+                        </span>
+                        <span class="navbar-item">
+                            <a href="https://www.youtube.com/user/summate.music/" title="YouTube - @summate.music"
+                               class="has-text-white">
+                            <span class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </span>
+                                YouTube
+                            </a>
+                        </span>
+                        <span class="navbar-item">
+                            <a href="https://open.spotify.com/playlist/2xASCT07oCdHUqBvLkprjP?si=Jctfc09OTm6XfWZhCH01sA"
+                               title="Spotify -  Playlist summate.music" class="has-text-white">
+                            <span class="icon">
+                                <i class="fab fa-spotify"></i>
+                            </span>
+                            Spotify
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="hero-body"></div>
+    <footer class="hero-foot">
         <div class="container has-text-centered">
-            <h1 class="title">
-                <img src="img/logo-summate-music-black@4x.png" title="Summate Music - Arte & Cultura" alt="Summate Music - Arte & Cultura" />
-            </h1>
-            <h2 class="subtitle">
-                Arte & Cultura
-            </h2>
-            <h3>
-                <a href="https://www.instagram.com/summate.music/" title="Instagram - @summate.music">
-                <span class="icon is-primary">
-                    <i class="fab fa-instagram"></i>
+            <h3 class="subtitle has-text-white">
+                <span class="icon">
+                    <i class="fas fa-video"></i>
                 </span>
-                </a>
-                <a href="https://www.youtube.com/user/summate.music/" title="YouTube - @summate.music">
-                <span class="icon is-primary">
-                    <i class="fab fa-youtube"></i>
-                </span>
-                </a>
-                <a href="https://open.spotify.com/playlist/2xASCT07oCdHUqBvLkprjP?si=Jctfc09OTm6XfWZhCH01sA" title="Spotify -  Playlist summate.music">
-                <span class="icon is-primary">
-                    <i class="fab fa-spotify"></i>
-                </span>
-                </a>
+                Próximo live streaming começa em
+                <span id="streaming-time-to-start" class="has-text-info"></span>
             </h3>
+        </div>
+    </footer>
+</section>
+<section class="section">
+    <div class="container content">
+        <h2 class="subtitle has-text-info has-text-centered">
+            Instigar culturalmente nossa sociedade através de experiências e informações sugestivas e
+            relevantes
+        </h2>
+    </div>
+</section>
+<section class="section">
+    <div class="container content">
+        <div class="columns">
+            <div class="column">
+                <figure class="image">
+                    <img src="img/summate-radio-leo-janeiro.jpg"
+                         alt="Summate Radio presents Leo Janeiro @ Mostra Casa Design Niterói 2019"
+                         title="Summate Radio presents Leo Janeiro @ Mostra Casa Design Niterói 2019"/>
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="img/summate-radio-flo-masse.jpg"
+                         alt="Summate Radio presents Flo Masse @ Mostra Casa Design Niterói 2019"
+                         title="Summate Radio presents Flo Masse @ Mostra Casa Design Niterói 2019"/>
+                </figure>
+            </div>
+            <div class="column">
+                <h3 class="subtitle">
+                    <span class="icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </span>
+                    Fique por dentro
+                </h3>
+                <form action="" method="post">
+                    <div class="field">
+                        <label for="fullname" class="label">Nome Completo</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Marcelo Abreu" name="fullname" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email" class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="ilovemusic@gmail.com" value="" name="email" />
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="address" class="label">Endereço</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Rua Santo Eduardo" name="address" />
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="field">
+                                <label for="area" class="label">Bairro</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Itaipu" name="area" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="field">
+                                <label for="city" class="label">Cidade</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Niterói" name="city" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <div class="field">
+                                <label for="state" class="label">Estado</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="RJ" name="state" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="birth" class="label">Data de Nascimento</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="18/03/1987" name="birth" />
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="instagram" class="label">Instagram</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="@renatapugliesi" name="instagram" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label for="optin" class="checkbox">
+                                <input type="checkbox" name="optin">
+                                Eu aceito receber e-mails informativos e promocionais.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
+<section class="section">
+    <div class="container content">
+        <h2 class="subtitle has-text-info has-text-centered">
+            Propagar bem-estar de forma exponencial, unindo pessoas que se complementam e se amplificam
+        </h2>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-thirds content">
+                <h2 class="subtitle">
+                    <span class="icon">
+                        <i class="fas fa-plug"></i>
+                    </span>
+                    Motivação
+                </h2>
+                <p class="has-text-justified">Nesta década, estamos vivendo uma mudança radical nos meios de propagação
+                    do conhecimento e do
+                    entretenimento. As informações que antes eram disseminadas pelas grandes emissoras de TV e rádio,
+                    passaram a ser transmitidas por blogs e YouTube e, especificamente nos últimos 5 anos, a
+                    proliferação de informações equivocadas sobre diversos assuntos, tomaram conta das redes
+                    sociais.</p>
+                <p class="has-text-justified">A qualidade do entretenimento e da arte em geral foi alterada devido a
+                    massificação dos canais
+                    responsáveis na internet. Ferramentas online facilitaram o lançamento de músicas por qualquer pessoa
+                    sem qualquer curadoria técnica, e o aparecimento de diversas gravadoras inflamaram uma infindável
+                    quantidade de lançamentos musicais. Softwares de edição de fotos, criação de arranjos musicais,
+                    equipamentos super baratos para captação de vídeo transformaram o mundo da arte. Hoje existem até
+                    aplicativos que fazem um logotipo automaticamente, sem precisar de um designer! Hoje é possível,
+                    através de qualquer meio, alastrar informações errôneas via WhatsApp, ou criar canais de YouTube
+                    para adolescentes muito cativantes porém com conteúdos nada benéficos. A facilidade tecnológica das
+                    ferramentas fizeram com que a qualidade do conhecimento transmitido e as virtudes em certas áreas
+                    estejam cada vez mais difíceis de serem vistas.</p>
+            </div>
+            <div class="column content">
+                <h2 class="subtitle">
+                    <span class="icon">
+                        <i class="far fa-lightbulb"></i>
+                    </span>
+                    Solução
+                </h2>
+                <p class="has-text-justified">Summate é um canal para unir pensadores, artistas, designers, chefs,
+                    fashionistas, fotógrafos, músicos, economistas, professores, nutricionistas, jornalistas e todo
+                    público que queira consumir conteúdo edificativo. Viemos para lutar contra a banalização da
+                    informação e ajudar a tornar o conteúdo na internet menos trivial e raso. Viemos para ser um canal
+                    que ajuda a potencializar outros canais que sejam importantes para o futuro da sociedade. Um
+                    somatório de forças que se amplifiquem e trazem melhor bem-estar à todos. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container content">
+        <h2 class="subtitle has-text-info has-text-centered">
+            Por isso criamos a Summate, dos verbos "somar", "agregar" e "resumir".
+        </h2>
+    </div>
+</section>
+<section class="section">
+    <div class="container content">
+        <h2 class="subtitle">
+                    <span class="icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </span>
+            Summate Music Crew
+        </h2>
+        <div class="columns">
+            <div class="column">
+                <figure class="image is-rounded">
+                    <img src="img/photo-summate-music-vanessa-queiroz.jpg" alt="Summate Music Crew - Vanessa Queiroz - Beatype" title="Summate Music Crew - Vanessa Queiroz - Beatype" class="is-rounded" />
+                </figure>
+                <p class="has-text-info has-text-centered">Vanessa Queiroz</p>
+            </div>
+            <div class="column">
+                <figure class="image is-rounded">
+                    <img src="img/photo-summate-music-rafa-marques.jpg" alt="Summate Music Crew - Rafa Marques - Beatype" title="Summate Music Crew - Rafa Marques - Beatype" class="is-rounded" />
+                </figure>
+                <p class="has-text-info has-text-centered">Rafa Marques</p>
+            </div>
+            <div class="column">
+                <figure class="image is-rounded">
+                    <img src="img/photo-summate-music-rafael-mazonni.jpg" alt="Summate Music Crew - Rafael Mazonni" title="Summate Music Crew - Rafael Mazonni" class="is-rounded" />
+                </figure>
+                <p class="has-text-info has-text-centered">Rafael Mazonni</p>
+            </div>
+            <div class="column">
+                <figure class="image is-rounded">
+                    <img src="img/photo-summate-music-diogo-vaille.jpg" alt="Summate Music Crew - Diogo Vaille - Bruce Leroys" title="Summate Music Crew - Diogo Vaille - Bruce Leroys" class="is-rounded" />
+                </figure>
+                <p class="has-text-info has-text-centered">Diogo Vaille</p>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="img/photo-summate-music-marcelo-abreu.jpg" alt="Summate Music Crew - Marcelo Abreu - Bruce Leroys" title="Summate Music Crew - Marcelo Abreu - Bruce Leroys" class="is-rounded" />
+                </figure>
+                <p class="has-text-info has-text-centered">Marcelo Abreu</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p><strong>Summate Music</strong> &copy; 2019</p>
+        <p>made with <span class="icon has-text-info"><i class="fas fa-heart"></i></span> by <a href="https://www.visualworks.com.br" title="Visual Works">Visual Works</a>.</p>
+    </div>
+</footer>
 <script src="https://kit.fontawesome.com/b76945248f.js" crossorigin="anonymous"></script>
+<script src="js/summatemusic.js" type="application/javascript"></script>
 </body>
 </html>
