@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Summate Music - Arte & Cultura - Amplificando Experiências</title>
     <link rel="shortcut icon" href="img/favicon-orange@4x.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -18,13 +19,13 @@
                         <img src="img/logo-summate-music-white@4x.png" title="Summate Music - Arte & Cultura"
                              alt="Summate Music - Arte & Cultura"/>
                     </a>
-                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-                </div>
-                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <span class="navbar-burger burger" data-target="navbar-menu-hero">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+               </div>
+                <div id="navbar-menu-hero" class="navbar-menu">
                     <div class="navbar-end">
                         <span class="navbar-item has-text-white">
                             Arte & Cultura
@@ -61,14 +62,16 @@
             </div>
         </header>
     </div>
-    <div class="hero-body"></div>
+    <div class="hero-body">
+        <img src="img/logo-summate-hero-banner.png" alt="Summate Music - Arte & Cultura" title="Summate Music - Arte & Cultura" />
+    </div>
     <footer class="hero-foot">
         <div class="container has-text-centered">
-            <h3 class="subtitle has-text-white">
+            <h3 class="title has-text-white">
                 <span class="icon">
                     <i class="fas fa-video"></i>
                 </span>
-                Próximo live streaming começa em
+                &nbsp; Próximo live streaming começa em
                 <span id="streaming-time-to-start" class="has-text-info"></span>
             </h3>
         </div>
@@ -99,72 +102,97 @@
                          title="Summate Radio presents Flo Masse @ Mostra Casa Design Niterói 2019"/>
                 </figure>
             </div>
-            <div class="column">
+            <div id="mc_embed_signup" class="column">
                 <h3 class="subtitle">
                     <span class="icon">
                         <i class="fas fa-envelope-open-text"></i>
                     </span>
                     Fique por dentro
                 </h3>
-                <form action="" method="post">
-                    <div class="field">
-                        <label for="fullname" class="label">Nome Completo</label>
+                <form action="https://visualworks.us5.list-manage.com/subscribe/post?u=c0e9802231809be072a8ca36a&amp;id=53257510dd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="field">
+                        <label for="mce-FNAME" class="label">Nome Completo</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Marcelo Abreu" name="fullname" />
+                            <input class="input" type="text" placeholder="Marcelo Abreu" name="FNAME" id="mce-FNAME" />
                         </div>
                     </div>
                     <div class="field">
-                        <label for="email" class="label">Email</label>
+                        <label for="mce-EMAI" class="label">Email</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" type="email" placeholder="ilovemusic@gmail.com" value="" name="email" />
+                            <input class="input" type="email" placeholder="ilovemusic@gmail.com" value="" name="EMAIL" id="mce-EMAIL" />
                             <span class="icon is-small is-left">
                               <i class="fas fa-envelope"></i>
                             </span>
                         </div>
                     </div>
                     <div class="field">
-                        <label for="address" class="label">Endereço</label>
+                        <label for="mce-ADDRESS-addr1" class="label">Endereço</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Rua Santo Eduardo" name="address" />
+                            <input class="input" type="text" placeholder="Rua Santo Eduardo" name="ADDRESS[addr1]" id="mce-ADDRESS-addr1" />
                         </div>
                     </div>
                     <div class="columns">
                         <div class="column">
                             <div class="field">
-                                <label for="area" class="label">Bairro</label>
+                                <label for="mce-ADDRESS-addr2" class="label">Bairro</label>
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="Itaipu" name="area" />
+                                    <input class="input" type="text" placeholder="Itaipu"  name="ADDRESS[addr2]" id="mce-ADDRESS-addr2" />
                                 </div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="field">
-                                <label for="city" class="label">Cidade</label>
+                                <label for="mce-ADDRESS-city" class="label">Cidade</label>
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="Niterói" name="city" />
+                                    <input class="input" type="text" placeholder="Niterói" name="ADDRESS[city]" id="mce-ADDRESS-city" />
                                 </div>
                             </div>
                         </div>
                         <div class="column is-one-quarter">
                             <div class="field">
-                                <label for="state" class="label">Estado</label>
+                                <label for="mce-ADDRESS-state" class="label">Estado</label>
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="RJ" name="state" />
+                                    <input class="input" type="text" placeholder="RJ" name="ADDRESS[state]" id="mce-ADDRESS-state" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-one-third">
+                            <div class="field">
+                                <label for="mce-ADDRESS-zip" class="label">CEP</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="24220-001" maxlength="10" name="ADDRESS[zip]" id="mce-ADDRESS-zip" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="field">
+                                <label for="mce-BIRTHDAY-day" class="label">Aniversário</label>
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="control">
+                                            <input class="input" type="text" pattern="[0-9]*" placeholder="18" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" />
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="control">
+                                            <input class="input" type="text" pattern="[0-9]*" placeholder="03" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" />
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="control">
+                                            <input class="input" type="text" pattern="[0-9]*" placeholder="1987" size="4" maxlength="4" name="BIRTHDAY[year]" id="mce-BIRTHDAY-year" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="field">
-                        <label for="birth" class="label">Data de Nascimento</label>
+                        <label for="mce-INSTAGRAM" class="label">Instagram</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="18/03/1987" name="birth" />
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label for="instagram" class="label">Instagram</label>
-                        <div class="control">
-                            <input class="input" type="text" placeholder="@renatapugliesi" name="instagram" />
+                            <input class="input" type="text" placeholder="@renatapugliesi" name="INSTAGRAM" id="mce-INSTAGRAM" />
                         </div>
                     </div>
                     <div class="field">
@@ -177,8 +205,13 @@
                     </div>
                     <div class="field is-grouped">
                         <div class="control">
-                            <button class="button is-link">Cadastrar</button>
+                            <div class="is-hidden" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c0e9802231809be072a8ca36a_53257510dd" tabindex="-1" value=""></div>
+                            <button type="submit" id="mc-embedded-subscribe" name="subscribe"  class="button is-link">Cadastrar</button>
                         </div>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
                     </div>
                 </form>
             </div>
@@ -292,7 +325,25 @@
         <p><span class="icon has-text-info"><i class="fas fa-laptop-code"></i></span><span class="icon has-text-info"><i class="fas fa-heart"></i></span><span class="icon has-text-info"><i class="fas fa-music"></i></span><span class="icon has-text-info"><i class="fas fa-mug-hot"></i></span> by <a href="https://www.visualworks.com.br" title="Visual Works">Visual Works</a>.</p>
     </div>
 </footer>
-<script src="https://kit.fontawesome.com/b76945248f.js" crossorigin="anonymous"></script>
 <script src="js/summatemusic.js" type="application/javascript"></script>
+<script src="https://kit.fontawesome.com/b76945248f.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+        fnames[2] = 'INSTAGRAM';
+        ftypes[2] = 'text';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+</script>
 </body>
 </html>
