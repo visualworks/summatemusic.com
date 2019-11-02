@@ -3,11 +3,12 @@ body {
 }
 
 .has-text-primary {
-    color: #000;
+    color: #fff;
 }
 
-a, .has-text-info, .has-text-link, .has-text-success {
-    color: #ff5c39;
+a, .has-text-info, .has-text-link, .has-text-success,
+h3.has-text-info {
+    color: #ff5c39 !important;
 }
 
 /*
@@ -16,4 +17,17 @@ a, .has-text-info, .has-text-link, .has-text-success {
 h1.title img {
     width: 100%;
     max-width: 600px;
+}
+
+section.hero {
+    background-image: url(../img/banner-placeholder@1x.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+footer.hero-foot {
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
