@@ -1,5 +1,5 @@
 window.addEventListener("load", (event) => {
-    const streamTime = new Date("November 02, 2019 17:00:00 GMT-03:00");
+    const streamTime = new Date("November 02, 2019 16:00:00 GMT-03:00");
     const domElement = document.getElementById("streaming-time-to-start");
     setInterval(() => {
         const currentTime = new Date();

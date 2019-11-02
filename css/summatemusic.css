@@ -25,9 +25,16 @@ section.hero {
     background-position: center center;
 }
 
+div.hero-body img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    max-width: 90%;
+}
+
 footer.hero-foot {
     background-color: #000;
     color: #fff;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
