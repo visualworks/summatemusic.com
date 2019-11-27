@@ -1,9 +1,10 @@
 window.addEventListener("load", () => {
-    const domElement = document.getElementById("streaming-time-to-start");
+    const countdownElement = document.getElementById("streaming-time-to-start");
     const videoPlayerElement = document.getElementById("live-streaming-video-player");
+    const streamingBannerElement = document.getElementById("summate-radio-streaming-banner");
     videoPlayerElement.width = screen.width;
     videoPlayerElement.height = screen.height;
-    // let pastEvents = [];
+    let pastEvents = [];
     let futureEvents = [];
     let currentEvent = [];
     fetch("/js/data.json", {
@@ -30,8 +31,19 @@ window.addEventListener("load", () => {
             });
             if (currentEvent.length === 0 && futureEvents.length > 0) {
                 const eventDate = futureEvents[0].date.split("-");
-                domElement.innerText = `${eventDate[2]}/${eventDate[1]} ${futureEvents[0].start}`;
+                countdownElement.innerText = `${eventDate[2]}/${eventDate[1]} ${futureEvents[0].start}`;
+                const banner = new Image();
+                banner.src = `/img/${futureEvents[0].banner}`;
+                banner.alt = `Summate Radio presents ${futureEvents[0].artist} @ Mostra Casa Design Niterói 2019`;
+                banner.title = `Summate Radio presents ${futureEvents[0].artist} @ Mostra Casa Design Niterói 2019`;
+                streamingBannerElement.appendChild(banner);
             } else if (currentEvent.length > 0) {
+                const banner = new Image();
+                banner.src = `/img/${currentEvent[0].banner}`;
+                banner.alt = `Summate Radio presents ${currentEvent[0].artist} @ Mostra Casa Design Niterói 2019`;
+                banner.title = `Summate Radio presents ${currentEvent[0].artist} @ Mostra Casa Design Niterói 2019`;
+                streamingBannerElement.appendChild(banner);
+
                 const eventStart = new Date(`${currentEvent[0].date}T${currentEvent[0].start}:00.000-03:00`);
                 const eventEnd = new Date(`${currentEvent[0].date}T${currentEvent[0].end}:00.000-03:00`);
                 let nowUTCTime = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
@@ -58,13 +70,13 @@ window.addEventListener("load", () => {
                         if (new Date(startUTCTime) < new Date(nowUTCTime)) {
                             location.reload();
                         }
-                        domElement.innerText = `${countdown.getUTCHours()} horas ${countdown.getUTCMinutes()} minutos ${countdown.getUTCSeconds()} segundos`;
+                        countdownElement.innerText = `${countdown.getUTCHours()} horas ${countdown.getUTCMinutes()} minutos ${countdown.getUTCSeconds()} segundos`;
                     }, 1000);
                 } else if (isPastEvent) {
                     videoPlayerElement.className = "is-hidden";
                     if (futureEvents.length > 0) {
                         const eventDate = futureEvents[0].date.split("-");
-                        domElement.innerText = `${eventDate[2]}/${eventDate[1]} ${futureEvents[0].start}`;
+                        countdownElement.innerText = `${eventDate[2]}/${eventDate[1]} ${futureEvents[0].start}`;
                     }
                 }
             }
