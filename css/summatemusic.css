@@ -39,6 +39,10 @@ iframe#live-streaming-video-player {
     z-index: 10;
 }
 
+a.tag {
+    text-decoration-line: line-through;
+}
+
 footer.hero-foot {
     background-color: #000;
     color: #fff;

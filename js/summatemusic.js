@@ -1,7 +1,9 @@
 window.addEventListener("load", () => {
     const countdownElement = document.getElementById("streaming-time-to-start");
-    const videoPlayerElement = document.getElementById("live-streaming-video-player");
     const streamingBannerElement = document.getElementById("summate-radio-streaming-banner");
+    const streamingNextListElement = document.getElementById("streaming-next-list");
+    const streamingPastListElement = document.getElementById("streaming-past-list");
+    const videoPlayerElement = document.getElementById("live-streaming-video-player");
     videoPlayerElement.width = screen.width;
     videoPlayerElement.height = screen.height;
     let pastEvents = [];
@@ -21,10 +23,21 @@ window.addEventListener("load", () => {
             let now = new Date();
             json.events.forEach((event) => {
                 const eventDate = new Date(event.date);
+                const eventListElement = document.createElement("li");
                 if (eventDate.getUTCMonth() < now.getUTCMonth() || (eventDate.getUTCMonth() === now.getUTCMonth() && eventDate.getUTCDate() < now.getUTCDate())) {
                     pastEvents.push(event);
+                    const eventListStreamingLink = document.createElement("a");
+                    eventListStreamingLink.href = "javascript:void(null);";
+                    eventListStreamingLink.title = "Em breve";
+                    eventListStreamingLink.innerText = "(assista aqui)";
+                    eventListStreamingLink.className = "tag";
+                    const eventListStreamingText = document.createTextNode(`${eventDate.getDate()}/${eventDate.getMonth() + 1} - ${event.artist} `);
+                    eventListElement.append(eventListStreamingText, eventListStreamingLink);
+                    streamingPastListElement.appendChild(eventListElement);
                 } else if (eventDate.getUTCMonth() > now.getUTCMonth() || (eventDate.getUTCMonth() === now.getUTCMonth() && eventDate.getUTCDate() > now.getUTCDate())) {
                     futureEvents.push(event);
+                    eventListElement.innerText = `${eventDate.getDate()}/${eventDate.getMonth() + 1} - ${event.artist}`;
+                    streamingNextListElement.appendChild(eventListElement);
                 } else if(eventDate.getUTCMonth() === now.getUTCMonth() && eventDate.getUTCDate() === now.getUTCDate()) {
                     currentEvent.push(event);
                 }
