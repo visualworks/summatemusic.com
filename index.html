@@ -90,18 +90,23 @@
     <div class="container content">
         <div class="columns">
             <div class="column">
-                <figure class="image">
-                    <img src="img/summate-radio-leo-janeiro.jpg"
-                         alt="Summate Radio presents Leo Janeiro @ Mostra Casa Design Niterói 2019"
-                         title="Summate Radio presents Leo Janeiro @ Mostra Casa Design Niterói 2019"/>
-                </figure>
+                <figure class="image" id="summate-radio-streaming-banner"></figure>
             </div>
             <div class="column">
-                <figure class="image">
-                    <img src="img/summate-radio-flo-masse.jpg"
-                         alt="Summate Radio presents Flo Masse @ Mostra Casa Design Niterói 2019"
-                         title="Summate Radio presents Flo Masse @ Mostra Casa Design Niterói 2019"/>
-                </figure>
+                <h3 class="subtitle">
+                    <span class="icon">
+                        <i class="fas fa-volume-up"></i>
+                    </span>
+                    Próximas transmissões
+                </h3>
+                <ul id="streaming-next-list"></ul>
+                <h3 class="subtitle">
+                    <span class="icon">
+                        <i class="fas fa-music"></i>
+                    </span>
+                    Transmissões passadas
+                </h3>
+                <ul id="streaming-past-list"></ul>
             </div>
             <div id="mc_embed_signup" class="column">
                 <h3 class="subtitle">
@@ -118,7 +123,7 @@
                         </div>
                     </div>
                     <div class="field">
-                        <label for="mce-EMAI" class="label">Email</label>
+                        <label for="mce-EMAIL" class="label">Email</label>
                         <div class="control has-icons-left has-icons-right">
                             <input class="input" type="email" placeholder="ilovemusic@gmail.com" value="" name="EMAIL" id="mce-EMAIL" />
                             <span class="icon is-small is-left">
@@ -177,11 +182,13 @@
                                         </div>
                                     </div>
                                     <div class="column">
+                                        <label for="mce-BIRTHDAY-month" class="label is-hidden">Mês</label>
                                         <div class="control">
                                             <input class="input" type="text" pattern="[0-9]*" placeholder="03" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" />
                                         </div>
                                     </div>
                                     <div class="column">
+                                        <label for="mce-BIRTHDAY-year" class="label is-hidden">Ano</label>
                                         <div class="control">
                                             <input class="input" type="text" pattern="[0-9]*" placeholder="1987" size="4" maxlength="4" name="BIRTHDAY[year]" id="mce-BIRTHDAY-year" />
                                         </div>
@@ -206,7 +213,10 @@
                     </div>
                     <div class="field is-grouped">
                         <div class="control">
-                            <div class="is-hidden" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c0e9802231809be072a8ca36a_53257510dd" tabindex="-1" value=""></div>
+                            <div class="is-hidden" style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <label for="b_c0e9802231809be072a8ca36a_53257510dd" class="label is-hidden">b_c0e9802231809be072a8ca36a_53257510dd</label>
+                                <input type="text" id="b_c0e9802231809be072a8ca36a_53257510dd" name="b_c0e9802231809be072a8ca36a_53257510dd" tabindex="-1" value="">
+                            </div>
                             <button type="submit" id="mc-embedded-subscribe" name="subscribe"  class="button is-link">Cadastrar</button>
                         </div>
                     </div>
@@ -335,8 +345,8 @@
 <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
     (function ($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
+        window.fnames = [];
+        window.ftypes = [];
         fnames[0] = 'EMAIL';
         ftypes[0] = 'email';
         fnames[1] = 'FNAME';

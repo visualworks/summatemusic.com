@@ -42,7 +42,7 @@ pipeline {
                 sh "aws configure set region $AWS_CFG_REGION --profile jenkins"
                 sh "aws configure set output json --profile jenkins"
                 sh 'aws s3 sync $WORKSPACE/ s3://$AWS_S3_BUCKET/ --exclude="*" --exclude="*.git*" --include="*.html" --include="*.css" --include="*.png" --include="*.jpg" --include="*.js" --acl="public-read" --profile jenkins'
-                sh 'aws cloudfront create-invalidation --distribution-id $AWS_CF_DISTRIBUTION --path "/*.*" --profile jenkins'
+                sh 'aws cloudfront create-invalidation --distribution-id $AWS_CF_DISTRIBUTION --path "/*" --profile jenkins'
             }
         }
     }
