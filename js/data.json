@@ -1,0 +1,109 @@
+{
+  "events": [
+    {
+      "date": "2019-11-02",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Leo Janeiro",
+      "banner": "summate-radio-leo-janeiro-11-02.jpg"
+    },
+    {
+      "date": "2019-11-03",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Flo Masse",
+      "banner": "summate-radio-flo-masse-11-03.jpg"
+    },
+    {
+      "date": "2019-11-05",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Nepal",
+      "banner": "summate-radio-nepal-11-05.jpg"
+    },
+    {
+      "date": "2019-11-20",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Flow & Zeo",
+      "banner": "summate-radio-flow-zeo-11-20.jpg"
+    },
+    {
+      "date": "2019-11-22",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Amanda Chang",
+      "banner": "summate-radio-amanda-chang-11-22.jpg"
+    },
+    {
+      "date": "2019-11-24",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Gustavo Magoo",
+      "banner": "summate-radio-gustavo-magoo-11-24.jpg"
+    },
+    {
+      "date": "2019-11-26",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Pinaud + Erica",
+      "banner": "summate-radio-pinaud-erica-11-26.jpg"
+    },
+    {
+      "date": "2019-11-28",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Mauricio Lopes",
+      "banner": "summate-radio-mauricio-lopes-11-28.jpg"
+    },
+    {
+      "date": "2019-11-29",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Renato Bastos",
+      "banner": "summate-radio-renato-bastos-11-29.jpg"
+    },
+    {
+      "date": "2019-11-30",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Gustavo Tata",
+      "banner": "summate-radio-gustavo-tata-11-30.jpg"
+    },
+    {
+      "date": "2019-12-01",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Leonardo S",
+      "banner": "summate-radio-leonardo-s-12-01.jpg"
+    },
+    {
+      "date": "2019-12-04",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Bernardo Campos",
+      "banner": "summate-radio-bernardo-campos-12-04.jpg"
+    },
+    {
+      "date": "2019-12-05",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Beranger",
+      "banner": "summate-radio-beranger-12-05.jpg"
+    },
+    {
+      "date": "2019-12-07",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Markinhos Meskita",
+      "banner": "summate-radio-markinhos-meskita-12-07.jpg"
+    },
+    {
+      "date": "2019-12-08",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Facchinetti",
+      "banner": "summate-radio-facchinetti-12-08.jpg"
+    }
+  ]
+}
