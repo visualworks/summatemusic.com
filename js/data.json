@@ -22,6 +22,20 @@
       "banner": "summate-radio-nepal-11-05.jpg"
     },
     {
+      "date": "2019-11-16",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Dri.k",
+      "banner": "summate-radio-drik-11-16.jpg"
+    },
+    {
+      "date": "2019-11-17",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Saulo Ferraro",
+      "banner": "summate-radio-saulo-ferraro-11-17.jpg"
+    },
+    {
       "date": "2019-11-20",
       "start": "17:00",
       "end": "21:00",
@@ -34,13 +48,6 @@
       "end": "21:00",
       "artist": "Amanda Chang",
       "banner": "summate-radio-amanda-chang-11-22.jpg"
-    },
-    {
-      "date": "2019-11-24",
-      "start": "17:00",
-      "end": "21:00",
-      "artist": "Gustavo Magoo",
-      "banner": "summate-radio-gustavo-magoo-11-24.jpg"
     },
     {
       "date": "2019-11-26",
@@ -74,8 +81,8 @@
       "date": "2019-12-01",
       "start": "17:00",
       "end": "21:00",
-      "artist": "Leonardo S",
-      "banner": "summate-radio-leonardo-s-12-01.jpg"
+      "artist": "Gustavo Magoo",
+      "banner": "summate-radio-gustavo-magoo-11-24.jpg"
     },
     {
       "date": "2019-12-04",
@@ -104,6 +111,20 @@
       "end": "21:00",
       "artist": "Facchinetti",
       "banner": "summate-radio-facchinetti-12-08.jpg"
+    },
+    {
+      "date": "2019-12-13",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Filipe Raposo",
+      "banner": "summate-radio-filipe-raposo-12-13.jpg"
+    },
+    {
+      "date": "2019-12-14",
+      "start": "17:00",
+      "end": "21:00",
+      "artist": "Underdogs",
+      "banner": "summate-radio-underdogs-12-14.jpg"
     }
   ]
 }
