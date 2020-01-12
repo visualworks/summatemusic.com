@@ -66,7 +66,7 @@
     <div class="hero-body">
         <img src="img/logo-summate-hero-banner.png" alt="Summate Music - Arte & Cultura" title="Summate Music - Arte & Cultura" />
     </div>
-    <footer class="hero-foot">
+    <footer class="hero-foot is-hidden">
         <div class="container has-text-centered">
             <h3 class="title has-text-white">
                 <span class="icon">
@@ -90,23 +90,18 @@
     <div class="container content">
         <div class="columns">
             <div class="column">
-                <figure class="image" id="summate-radio-streaming-banner"></figure>
+                <figure class="image">
+                    <img src="/img/summate-radio-underdogs-12-14.jpg" alt="Radio Summate @ Casa Design - Underdogs" title="Radio Summate @ Casa Design - Underdogs" />
+                </figure>
             </div>
             <div class="column">
                 <h3 class="subtitle">
                     <span class="icon">
                         <i class="fas fa-volume-up"></i>
                     </span>
-                    Próximas transmissões
+                    Passaram pela casa
                 </h3>
                 <ul id="streaming-next-list"></ul>
-                <h3 class="subtitle">
-                    <span class="icon">
-                        <i class="fas fa-music"></i>
-                    </span>
-                    Transmissões passadas
-                </h3>
-                <ul id="streaming-past-list"></ul>
             </div>
             <div id="mc_embed_signup" class="column">
                 <h3 class="subtitle">
@@ -231,6 +226,32 @@
 </section>
 <section class="section">
     <div class="container content">
+        <div class="columns">
+            <div class="column">
+                <figure class="image">
+                    <img src="/img/logo-amazzoni-gin.png" alt="Parceiro - Amazzoni Gin" title="Amazzoni Gin" />
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="/img/logo-ovoo.png" alt="Parceiro - Ovoo" title="Ovoo" />
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="/img/logo-spin.png" alt="Parceiro - Spin" title="Spin" />
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="/img/logo-audio-mais.png" alt="Parceiro - Audio+" title="Audio+" />
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container content">
         <h2 class="subtitle has-text-info has-text-centered">
             Propagar bem-estar de forma exponencial, unindo pessoas que se complementam e se amplificam
         </h2>
@@ -343,6 +364,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156087978-1"></script>
 <script type="text/javascript">
     (function ($) {
         window.fnames = [];
@@ -359,6 +381,13 @@
         ftypes[2] = 'text';
     }(jQuery));
     var $mcj = jQuery.noConflict(true);
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-156087978-1');
 </script>
+
 </body>
 </html>
